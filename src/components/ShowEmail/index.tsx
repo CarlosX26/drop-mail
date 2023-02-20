@@ -29,7 +29,7 @@ const ShowEmail = ({
         </Button>
         <Text as="b" display="block">
           {headerSubject === undefined && "Select an email"}
-          {headerSubject === "" && "Sem assunto"}
+          {headerSubject === "" ? "Sem assunto":headerSubject}
         </Text>
       </Box>
 
