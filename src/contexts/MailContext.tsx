@@ -62,10 +62,6 @@ const MailProvider = ({ children }: IMailProviderProps) => {
         "@dropmail:session",
         JSON.stringify(introduceSession)
       );
-      localStorage.setItem(
-        "@dropmail:currentemail",
-        JSON.stringify(introduceSession.addresses[0].address)
-      );
 
       setCurrentSession(introduceSession);
       setCurrentEmail(introduceSession.addresses[0].address);
@@ -86,6 +82,12 @@ const MailProvider = ({ children }: IMailProviderProps) => {
           return await getSession();
         }
 
+        const boxEmailInStorage = localStorage.getItem("@dropmail:boxEmails")
+        
+        if(boxEmailInStorage){
+          setBoxEmails(JSON.parse(boxEmailInStorage))
+        }
+
         setCurrentSession(session);
         setCurrentEmail(session.addresses[0].address);
       } else {
@@ -103,6 +105,13 @@ const MailProvider = ({ children }: IMailProviderProps) => {
       const boxEMails: IBoxEmails = response.data.data.session;
 
       setBoxEmails(boxEMails);
+      
+      localStorage.setItem(
+        "@dropmail:boxEmails",
+        JSON.stringify(boxEMails)
+      );
+
+
     } catch (error) {
       console.log(error);
     }
