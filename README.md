@@ -1,6 +1,6 @@
 # DROPMAIL
 
-Esta é uma aplicação web, onde o usúario tem acesso a uma caixa de emails temporário.
+Esta é uma aplicação web que oferece aos usuários acesso a uma caixa de e-mail temporária. Com esta aplicação, você pode criar um endereço de e-mail temporário para uso em situações em que não deseja compartilhar seu endereço de e-mail principal. A interface da aplicação é simples e intuitiva, permitindo que você crie um endereço de e-mail temporário logo ao entrar. A caixa de e-mail temporário pode ser usada para receber e-mails de confirmação de contas, newsletters, promoções e outros tipos de mensagens que você não deseja receber em sua caixa de entrada principal.
 
 link da API utilizada: https://dropmail.me/api/
 
