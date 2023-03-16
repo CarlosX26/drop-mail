@@ -1,4 +1,4 @@
-# DropMail
+# DROPMAIL
 
 Esta é uma aplicação web, onde o usúario tem acesso a uma caixa de emails temporário.
 
