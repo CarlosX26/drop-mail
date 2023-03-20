@@ -1,7 +1,8 @@
 import axios from "axios";
+import env from "react-dotenv";
 
 const api = axios.create({
-  baseURL: "https://dropmail.me/api/graphql/web-test-20230216qi62K",
+  baseURL: env.API_URL,
   timeout: 5000,
 });
 
